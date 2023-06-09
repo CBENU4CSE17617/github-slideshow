@@ -40,3 +40,14 @@ git push staging master:gh-pages --force && git remote rm staging
 # Celebrate and open the staging site
 printf "\n${grn}# Success!${end}\n"
 open https://pages.ghe.io/${account}/${repo}/
+
+
+
+# test for rebase error
+# Create a temp Git repo to push from
+#
+# 1. From the compiled Jekyll `_site` directory
+# 2. Initialize a new repo within that directory
+# 3. Add a new remote called staging that we can push to
+# 4. Add all our files
+# 5. Write a generic commit message
